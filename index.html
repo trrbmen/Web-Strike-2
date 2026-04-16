@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Web-Strike 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="intro-screen">
+        <img src="https://www.mediafire.com/view/fnbru5u0jg25zgf/gameintro.gif/file" id="intro-gif">
+    </div>
+
+    <div id="main-menu" class="hidden">
+        <div class="menu-top">
+            <button id="btn-play">PLAY</button>
+        </div>
+
+        <div id="play-options" class="hidden">
+            <button id="mode-offline">OFFLINE</button>
+            <button id="mode-multiplayer">MULTIPLAYER</button>
+        </div>
+
+        <div id="server-browser" class="hidden">
+            <button id="create-server-btn">CREATE SERVER</button>
+            <div id="server-list-header">
+                <span>Server Name</span> | <span>Players</span> | <span>Map</span> | <span>Ping</span>
+            </div>
+            <div id="servers"></div>
+            <button id="cancel-server">CANCEL</button>
+        </div>
+
+        <div class="menu-bottom">
+            <input type="text" id="nickname" placeholder="Enter Nickname..." maxlength="20">
+            <div class="valpha-tag">valpha</div>
+        </div>
+    </div>
+
+    <div id="game-ui" class="hidden">
+        <div id="killfeed"></div>
+        <div id="chat-system">
+            <div id="chat-messages"></div>
+            <input type="text" id="chat-input" placeholder="Say something...">
+        </div>
+        
+        <div id="crosshair"></div>
+        <img id="weapon-view" src="">
+
+        <div class="hud-bottom-left">
+            <div id="money-display">$800</div>
+            <div class="ammo-container">
+                <div id="ammo-text">0 / 0</div>
+                <div class="ammo-slots">
+                    <div id="slot-1" class="slot"></div>
+                    <div id="slot-2" class="slot"></div>
+                    <div id="slot-3" class="slot active"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="player-feet"></div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
