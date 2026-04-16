@@ -1,6 +1,6 @@
 const ASSETS = {
     intro: {
-        gif: "https://raw.githubusercontent.com/trrbmen/Web-Strike-2/refs/heads/main/gameintro.gif", 
+        gif: "https://litter.catbox.moe/behch2bh6fw2tcr5.gif", 
         mp3: "https://www.mediafire.com/file/6r4o2boyvx9t1ya/gameintro.mp3/file"
     }
     // ... diğer assetler
